@@ -1,0 +1,24 @@
+.footer-div {
+    color: rgb(225, 223, 233);
+    /* background-color: rgb(5, 27, 49); */
+    text-align: center;
+    padding: 1rem 0;
+    /* position: fixed; */
+    margin-bottom: 0px;
+    /* left: 0; */
+    font-size: 1rem;
+}
+
+@media (max-width: 786px){
+    .footer-div span{
+        font-size:x-small;
+        display:flex;
+        margin-right: 5px;
+        justify-content: end;
+    }
+
+}
+
+.headfont{
+    color: #4cc9f0;
+}

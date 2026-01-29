@@ -1,0 +1,188 @@
+/* ===== BASE ===== */
+body {
+  background-color: #0b132b;
+  color: #eaeaea;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Career page wrapper */
+.carrerpage {
+  background: linear-gradient(180deg, #1c2541, #0b132b);
+  padding: 20px;
+  border-radius: 16px;
+}
+
+/* ===== HERO / FIRST BLOCK ===== */
+.first_block {
+  color: #ffffff;
+  text-align: center;
+}
+
+.name-txt{
+    color: #4cc9f0;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.headfont{
+    color: #4cc9f0;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+/* ===== CARD BLOCKS ===== */
+.test1, .test2, .test3, .test4, .test5 {
+  color: #eaeaea;
+  background: #1c2541;
+  margin-bottom: 16px;
+  padding: 15px;
+  border-radius: 14px;
+  cursor: pointer;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+
+  /* Animation */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Hover effect – smooth & safe */
+.test1:hover,
+.test2:hover,
+.test3:hover,
+.test4:hover,
+.test5:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(76,201,240,0.35);
+  background: #24304d;
+}
+
+/* ===== IMAGES ===== */
+.profile-img{
+    max-width: 550px;
+    max-height: 450px;
+    border: 3px solid #4cc9f0;
+    box-shadow: 0 0 30px rgba(76,201,240,0.6);
+    display:flexbox;
+    justify-content:flex-end;
+}
+.vmc-logo{
+    width: 300px;
+    height: 180px;
+}
+/* ===== TEXT ===== */
+p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.7;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #cfd8dc;
+}
+
+/* Sections */
+.hepdata,
+.roles,
+.Quess-corp-div,
+.vmc-div {
+  font-size: 1rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #eaeaea;
+}
+
+/* ===== DIVIDERS ===== */
+hr {
+  border: 2px solid rgba(255,255,255,0.2);
+  border-radius: 50%;
+}
+
+/* ===== RESPONSIVE BREAKPOINTS ===== */
+
+@media (max-width :7680px){
+    .heptagon-logo{
+        max-width: 350px;
+    }
+}
+/* Tablets */
+@media (max-width: 992px) {
+  .img-thumbnail {
+    max-width: 220px;
+  }
+
+  .vmc-logo, .quess-logo, .heptagon-logo{
+    max-width: 230px;
+    }
+
+  .roles {
+    margin-top: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .first_block {
+    text-align: center;
+  }
+
+  .name-txt{
+    max-width: 500px;
+  }
+  .img-thumbnail {
+    max-width: 180px;
+    margin-top: 20px;
+  }
+.vmc-logo, .quess-logo, .heptagon-logo{
+    max-width: 230px;
+    }
+  .test1, .test2, .test3, .test4, .test5 {
+    transform: none;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+  .img-thumbnail {
+    max-width: 550px;
+  }
+.vmc-logo, .quess-logo, .heptagon-logo{
+    max-width: 130px;
+    }
+  p {
+    font-size: 0.9rem;
+  }
+
+  .carrerpage {
+    padding: 15px;
+  }
+}
+
+
+.custom-card {
+  background-color: #1c2541;      /* Dark background */
+  color: #eaeaea;                 /* Text color */
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+/* Title */
+.custom-card .card-title {
+  color: #4cc9f0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+/* Text */
+.custom-card .card-text,
+.custom-card p,
+.custom-card li {
+  color: #cfd8dc;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}

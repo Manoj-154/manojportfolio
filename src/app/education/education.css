@@ -1,0 +1,137 @@
+.headfont{
+    color: #4cc9f0;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.main-cont p, a{
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.7;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #cfd8dc;
+}
+
+/* ================= CONTAINER ================= */
+.education_bg {
+  background: linear-gradient(135deg, #050b1e, #081a33);
+  border-radius: 18px;
+  padding: 30px 20px;
+  color: #eaeaea;
+}
+
+/* ================= TITLE ================= */
+#accordion h5 {
+  color: #4cc9f0;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* ================= CARD ================= */
+#accordion .card {
+  background: transparent;
+  border: none;
+}
+
+/* ================= HEADER ================= */
+#accordion .card-header {
+  background: #051b31;
+  border-radius: 12px;
+  border: 1px solid #123a63;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+#accordion .card-header:hover {
+  background: #07305a;
+  border-color: #4cc9f0;
+}
+
+/* Header button */
+#accordion .card-header .btn {
+  width: 100%;
+  text-align: left;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 16px 20px;
+  text-decoration: none;
+}
+
+/* ================= ACTIVE STATE ================= */
+#accordion .card:has(div[ng-reflect-ng-if="true"]) .card-header {
+  background: #07305a;
+  border-left: 4px solid #4cc9f0;
+}
+
+/* ================= BODY ================= */
+#accordion .card-body {
+  background: #0a2540;
+  border-radius: 0 0 14px 14px;
+  margin-top: 8px;
+  border: 1px solid #123a63;
+  animation: expandFade 0.3s ease;
+}
+
+/* Body cards */
+#accordion .card-body .card {
+  background: #081f3a;
+  border-radius: 12px;
+  border: none;
+  color: #dbeafe;
+}
+
+#accordion .card-body p {
+  line-height: 1.7;
+}
+
+/* ================= IMAGE ================= */
+#accordion img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* ================= MODAL BUTTONS ================= */
+.marks-btn {
+  background: transparent;
+  border: 1px solid #4cc9f0;
+  color: #4cc9f0;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.marks-btn:hover {
+  background: #4cc9f0;
+  color: #051b31;
+}
+
+/* ================= MODALS ================= */
+.modal-content {
+  background: #081f3a;
+  color: #eaeaea;
+  border-radius: 16px;
+  border: 1px solid #123a63;
+}
+
+.modal-header {
+  border-bottom: 1px solid #123a63;
+}
+
+.modal-footer {
+  border-top: 1px solid #123a63;
+}
+
+/* ================= ANIMATION ================= */
+@keyframes expandFade {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+

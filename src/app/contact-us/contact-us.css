@@ -1,0 +1,17 @@
+
+
+.headfont{
+    color: #4cc9f0;
+}
+
+.container-fluid p , a{
+    color: whitesmoke;
+}
+
+.main-cont p,a ,b {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.7;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #cfd8dc;
+}

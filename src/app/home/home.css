@@ -1,0 +1,113 @@
+/* ================= APP LAYOUT ================= */
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #020617;
+}
+
+/* ================= SIDENAV ================= */
+.sidenav {
+  width: 220px;
+  background: linear-gradient(180deg, #051b31, #041426);
+  color: #ffffff;
+  position: fixed;
+  height: 100vh;
+  padding-top: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.45);
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* ================= INNER WRAPPER ================= */
+.btn-div {
+  padding: 20px 16px;
+}
+
+/* ================= TITLE ================= */
+.sidenav h5 {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  margin-bottom: 20px;
+  color: #4cc9f0;
+}
+
+/* ================= NAV LINKS ================= */
+.btns a {
+  display: block;
+  padding: 10px 12px;
+  margin: 6px 0;
+  color: #dbeafe;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+}
+
+/* Hover */
+.btns a:hover {
+  background: rgba(76, 201, 240, 0.12);
+  color: #4cc9f0;
+  padding-left: 16px;
+}
+
+/* Active route */
+.router-link-active {
+  background: rgba(76, 201, 240, 0.18);
+  color: #4cc9f0 !important;
+  font-weight: 600;
+  border-left: 4px solid #4cc9f0;
+}
+
+/* ================= MAIN CONTENT ================= */
+.content {
+  margin-left: 220px;
+  padding: 24px;
+  width: 100%;
+  background: #020617;
+}
+
+/* ================= HAMBURGER ================= */
+.hamburger {
+  position: fixed;
+  top: 14px;
+  left: 14px;
+  z-index: 1100;
+  background: #051b31;
+  color: #ffffff;
+  border: 1px solid #123a63;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.hamburger:hover {
+  background: #07305a;
+  border-color: #4cc9f0;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+  .btn-div {
+    margin-top: 60px;
+  }
+
+  .sidenav {
+    transform: translateX(-100%);
+    z-index: 1050;
+  }
+
+  .sidenav.open {
+    transform: translateX(0);
+  }
+
+  .content {
+    margin-left: 0;
+    padding: 16px;
+  }
+}

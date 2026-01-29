@@ -1,0 +1,42 @@
+<div class="app-layout">
+
+  <!-- Hamburger (Mobile only) -->
+  <button class="hamburger d-md-none" (click)="toggleNav()">
+    ☰
+  </button>
+  <!-- Side Navigation -->
+  <aside class="sidenav" [class.open]="isNavOpen">
+    <nav>
+      <div class="btn-div">
+        <h5 style="color: #4cc9f0;">Personal-Info <i class="fas fa-globe"></i></h5>
+        <div class="btns">
+          <a routerLink="career" routerLinkActive="router-link-active">Career</a>
+          <a routerLink="projects" routerLinkActive="router-link-active">Projects</a>
+          <a routerLink="education" routerLinkActive="router-link-active">Education</a>
+          <a routerLink="intrests" routerLinkActive="router-link-active">Interests</a>
+          <a routerLink="contact-us" routerLinkActive="router-link-active">Contact Me</a>
+        </div>
+        <!-- Social -->
+        <div class="social" style="bottom: 30px; position:fixed;">
+           <div class="col px-2 text-decoration-none">
+            <p style="color: #4cc9f0;">Follow on :</p>
+            <a href="mailto: manojpachipala15@gmail.com" class="mx-1" title="Gmail"><img src="/assets/images/gmail.svg" alt="" style="height:25px"></a>
+            <a href="https://www.instagram.com/manojpachipala/" class="mx-1" title="Instagram"><img src="/assets/images/instagram.svg" alt="" style="height:25px"></a> 
+            <a href="https://wa.link/hlhruz" class="mx-1" title="Whatsapp"><img src="/assets/images/whatsapp.svg" alt="" style="height:25px"></a>
+            <a href="https://twitter.com/manojpachipala" class="mx-1" title="Twitter"><img src="/assets/images/twitter.svg" alt="" style="height:25px"></a><br>
+            <a href="https://www.facebook.com/profile.php?id=100078122196914" class="mx-1" title="facebook"><img src="/assets/images/fb.svg" alt="" style="height:25px"></a>
+            <a href="https:www.linkedin.com/in/manoj-pachipala-33b426394" class="mx-1" title="LinkedIn"><img src="/assets/images/linkedin.svg" alt="" style="height:25px"></a>
+            <a href="https://www.youtube.com/channel/UCZUwhxqY_pwjogTGbDL39Cg" class="mx-1" title="Youtube"><img src="/assets/images/youtube.svg" alt="" style="height:25px"></a>
+            <a href="#" class="mx-1" title="Telegram"><img src="/assets/images/telegram.svg" alt="" style="height:25px"></a>
+          </div> 
+        </div>
+      </div>
+    </nav>
+  </aside>
+
+  <!-- MAIN CONTENT (THIS CHANGES) -->
+  <main class="content">
+    <router-outlet></router-outlet>
+  </main>
+
+</div>

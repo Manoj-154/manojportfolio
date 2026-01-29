@@ -1,0 +1,182 @@
+<div class="row main-cont">
+  <div class="container education_bg mt-5">
+
+    <div id="accordion" class="mx-2 d-flex flex-column gap-2">
+      <h5 class="text-center pb-3 mt-5 headfont">Complete Education details</h5>
+
+      <!-- ================= BTECH ================= -->
+      <div class="card">
+        <div class="card-header">
+          <a class="btn" (click)="toggle('btech')">
+            Bachelor of Technology (B.Tech)
+          </a>
+        </div>
+
+        <div *ngIf="opened === 'btech'">
+          <div class="card-body">
+            <div class="row">
+              <div class="col card mx-2 px-2 py-2">
+                <p>
+                  I had my Graduation from Mother Theresa Institute of Engineering and Technology
+                  in the stream of Computer Science and engineering (CSE) from the year 2017-2021
+                  and i was participated in various activities conducted in the college level programs
+                  and events and the seminars where i had enhanced my skills in the particular area of
+                  exposing the knowlwdge to the people and faced lot of difficulties in the initiall days
+                  of participating to them volunterly where the curiosity can make us stood in every time
+                  in the tough situations not to comeback from the compitations in the real life should
+                  have dear to face the all kind of situation with the smile on face with glowing for
+                  winning area.
+                  <br><br>
+                  <b>Better make try than a regreting mind of not participating</b>
+                </p>
+              </div>
+              <div class="col card mx-2 px-2 py-2">
+                <img class="profile-img" src="assets/images/manoj-pics/manoj-proffesional-photo.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= INTER ================= -->
+      <div class="card">
+        <div class="card-header">
+          <a class="btn" (click)="toggle('inter')">
+            Intermediate
+          </a>
+        </div>
+
+        <div *ngIf="opened === 'inter'">
+          <div class="card-body">
+            <div class="row">
+              <div class="col card mx-2 px-2 py-2">
+                <p>
+                  I had completed my Intermediate education from the Mother Theresa Junior college,
+                  Palamaner and came out from <code>Mathematics</code> Background and scored the best
+                  marks in the part of intermediate college and choosed to take the Bachelor of technology
+                  as an foundation course to my carreer and complete in the year <b>2015-2017</b>
+                </p>
+              </div>
+              <div class="col card mx-2 px-2 py-2">
+                <p>
+                  Also i was very much active in the sports during the time and playing Cricket and
+                  Tennins these two are the major games i used to play their and participated in the
+                  various levels in journals
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= SSC ================= -->
+      <div class="card">
+        <div class="card-header">
+          <a class="btn" (click)="toggle('ssc')">
+            Secondary School Education (SSC)
+          </a>
+        </div>
+
+        <div *ngIf="opened === 'ssc'">
+          <div class="card-body">
+            <div class="row">
+              <div class="col card mx-2 px-2 py-2">
+                <p>
+                  I wad passed out in the year of <b>2015</b> from Brahmarshi high school, Palamaner
+                  and also participates in the various Quiz games in the school throughout the
+                  acedemic year
+                </p>
+              </div>
+              <div class="col card mx-2 px-2 py-2">
+                <p>Good at Playing games, quiz</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= MODALS SECTION (UNCHANGED) ================= -->
+    <div class="row mt-5 text-center">
+      <h3 style="color: rgba(245, 245, 245, 0.493);">
+        Click on respective course to see their Acedemic Percentage
+      </h3>
+
+      <!-- BTECH MODAL -->
+      <div class="col mt-5">
+        <button class="btn px-4 py-2 marks-btn" data-bs-toggle="modal" data-bs-target="#myModal">
+          B.Tech
+        </button>
+
+        <div class="modal fade" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Bachelor of Technology</h4>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <div class="modal-body">
+                <p>63% in Computer Science and Engineering (CSE)</p>
+              </div>
+              <div class="modal-footer">
+                <button class="btn marks-btn" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- INTER MODAL -->
+      <div class="col mt-5">
+        <button class="btn marks-btn" data-bs-toggle="modal" data-bs-target="#myModal1">
+          Inter
+        </button>
+
+        <div class="modal fade  " id="myModal1">
+          <div class="modal-dialog ">
+            <div class="modal-content">
+              <div class="modal-header main-box">
+                <h4 class="modal-title">Intermediate</h4>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <div class="modal-body">
+                <p>81.3% in M.P.C (Mathematics)</p>
+              </div>
+              <div class="modal-footer">
+                <button class="btn marks-btn" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SSC MODAL -->
+      <div class="col mt-5">
+        <button class="btn marks-btn" data-bs-toggle="modal" data-bs-target="#myModal2">
+          S.S.C
+        </button>
+
+        <div class="modal fade" id="myModal2">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Secondary School Education (SSC)</h4>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <div class="modal-body">
+                <p>7.8 GPA in Secondary Board Education</p>
+              </div>
+              <div class="modal-footer">
+                <button class="btn marks-btn" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<app-footer></app-footer>

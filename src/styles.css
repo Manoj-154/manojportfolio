@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+/* ===== DARK THEME ROOT ===== */
+:root {
+  --bg-main: #0b132b;
+  --bg-card: #1c2541;
+  --bg-sidenav: #051b31;
+  --text-main: #eaeaea;
+  --text-muted: #a5b4c3;
+  --accent: #4cc9f0;
+  --border-soft: rgba(255,255,255,0.08);
+}
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #0b132b;
+}
+::-webkit-scrollbar-thumb {
+  /* background: var(--accent); */
+  background: whitesmoke;
+  border-radius: 6px;
+}
