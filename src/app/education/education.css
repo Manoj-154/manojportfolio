@@ -11,7 +11,11 @@
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: #cfd8dc;
 }
-
+.profile-img{
+ height: 320px;
+  width: auto;
+  object-fit: contain;
+}
 /* ================= CONTAINER ================= */
 .education_bg {
   background: linear-gradient(135deg, #050b1e, #081a33);

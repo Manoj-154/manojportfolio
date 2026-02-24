@@ -7,6 +7,8 @@ import { homedir } from 'os';
 import { Footer } from './footer/footer';
 import { Intrests } from './intrests/intrests';
 import { Projects } from './projects/projects';
+import { CloudDevOps } from './cloud-dev-ops/cloud-dev-ops';
+import { Certifications } from './certifications/certifications';
 
 export const routes: Routes =
 //  [
@@ -28,6 +30,8 @@ export const routes: Routes =
       { path: '', redirectTo: 'career', pathMatch: 'full' },
       { path: 'career', component: Career },
       { path: 'projects', component: Projects },
+      { path: 'cloud-devops', component: CloudDevOps},
+      { path: 'Certifications', component:Certifications},
       { path: 'education', component: Education },
       { path: 'contact-us', component: ContactUs },
       { path: 'intrests', component: Intrests }
