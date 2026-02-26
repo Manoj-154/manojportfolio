@@ -9,7 +9,7 @@ RUN npm run build -- --configuration production
 # Stage 2 → Serve using nginx
 FROM nginx:alpine
 # COPY --from=build /app/dist/manojportfolio /usr/share/nginx/html
-# rm -rf /var/www/html/*
+RUN rm -rf /var/www/html/*
  COPY -r dist/manojportfolio/browser/* /var/www/html/
 
 EXPOSE 80
